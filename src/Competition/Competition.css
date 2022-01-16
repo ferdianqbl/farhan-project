@@ -1,0 +1,155 @@
+.competition#competition {
+  font-family: 'Gotham', sans-serif;
+}
+
+.competition#competition .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.competition#competition .competition-title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  padding: 2rem 0 2rem 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .competition#competition .competition-title {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+.competition#competition .container {
+  min-height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.competition#competition .container .competition-subtitle {
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+.competition#competition .container .cardCompetition {
+  border: none;
+  width: 17.8125rem;
+  min-height: 17.8125rem;
+  padding: 1.25rem 0;
+  margin-top: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(240, 240, 240, 0)), color-stop(0%, rgba(240, 240, 240, 0)), color-stop(0.01%, rgba(240, 240, 240, 0.3)), to(rgba(240, 240, 240, 0.5)));
+  background: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0.3) 0.01%, rgba(240, 240, 240, 0.5) 100%);
+  border: 1px solid #fcfcfc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.competition#competition .container .cardCompetition:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.competition#competition .container .cardCompetition .card-img img.img-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.competition#competition .container .cardCompetition .card-body .card-body-text {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 150%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .competition#competition .container .cardCompetition {
+    width: 16.8125rem;
+    min-height: 16.8125rem;
+  }
+  .competition#competition .container .cardCompetition .card-img img.img-icon {
+    width: 8.375rem;
+    height: 8.375rem;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .competition#competition .container .cardCompetition {
+    width: 100%;
+  }
+  .competition#competition .container .cardCompetition .card-img img.img-icon {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .competition#competition .container .cardCompetition .card-body .card-body-text {
+    margin-top: 1rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .competition#competition .container .cardCompetition {
+    width: 65%;
+    margin: auto;
+    margin-top: 1.875rem;
+  }
+  .competition#competition .container .cardCompetition .card-img img.img-icon {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .competition#competition .container .cardCompetition .card-body .card-body-text {
+    margin-top: 1rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Competition.css.map */

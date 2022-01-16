@@ -1,0 +1,153 @@
+.competition#competition {
+  font-family: 'Gotham', sans-serif;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .competition-title {
+    font-weight: bold;
+    font-size: 2.25rem;
+    padding: 2rem 0 2rem 2rem;
+
+    @media screen and (max-width: 992px) {
+      & {
+        text-align: center;
+        padding: 2rem 0 2rem 0;
+      }
+    }
+
+  }
+
+  .container {
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    .competition-subtitle {
+      font-weight: 500;
+      font-size: 2.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .cardCompetition {
+      border: none;
+      width: 17.8125rem;
+      min-height: 17.8125rem;
+      padding: 1.25rem 0;
+      margin-top: 1.875rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      align-content: center;
+      background: linear-gradient(90deg,
+          rgba(240, 240, 240, 0) 0%,
+          rgba(240, 240, 240, 0) 0%,
+          rgba(240, 240, 240, 0.3) 0.01%,
+          rgba(240, 240, 240, 0.5) 100%);
+      border: 1px solid #fcfcfc;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+      backdrop-filter: blur(50px);
+      border-radius: 18px;
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .card-img {
+        img.img-icon {
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: auto;
+        }
+      }
+
+      .card-body {
+        .card-body-text {
+          margin-top: 1rem;
+          font-size: 1.125rem;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 150%;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
+      @media screen and (max-width:1400px) {
+        & {
+          width: 16.8125rem;
+          min-height: 16.8125rem;
+        }
+
+        .card-img {
+          img.img-icon {
+            width: 8.375rem;
+            height: 8.375rem;
+            display: block;
+            margin: auto;
+          }
+        }
+      }
+
+      @media screen and (max-width:1200px) {
+        & {
+          width: 100%;
+
+          .card-img {
+            img.img-icon {
+              max-width: 100%;
+              display: block;
+              margin: auto;
+            }
+          }
+
+          .card-body {
+            .card-body-text {
+              margin-top: 1rem;
+              font-family: Poppins, sans-serif;
+              font-size: 1.125rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width:576px) {
+        & {
+          width: 65%;
+          margin: auto;
+          margin-top: 1.875rem;
+
+          .card-img {
+            img.img-icon {
+              max-width: 100%;
+              display: block;
+              margin: auto;
+            }
+          }
+
+          .card-body {
+            .card-body-text {
+              margin-top: 1rem;
+              font-family: Poppins, sans-serif;
+              font-size: 1.125rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
